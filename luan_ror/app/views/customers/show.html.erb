@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @customer.nome %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @customer.language_id %>
+</p>
+
+<p>
+  <strong>Salt:</strong>
+  <%= @customer.salt %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @customer.password %>
+</p>
+
+<p>
+  <strong>Followable:</strong>
+  <%= @customer.followable %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @customer.status_id %>
+</p>
+
+<p>
+  <strong>Is 2fa:</strong>
+  <%= @customer.is_2fa %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
